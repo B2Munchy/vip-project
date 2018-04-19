@@ -1,0 +1,49 @@
+include head.pug
+  include style.pug
+  include style-pharma.pug
+include header.pug
+//body
+.row
+  .cover-wrapper
+    .cover-container
+      .col-md-6.col-md-offset-3.inner.cover
+        h1.cover-heading Full screen background cover page.
+        p.lead
+          | Cover is a one-page template for building simple and
+          | beautiful home pages. Download, edit the text, and add your own
+          | fullscreen background color and photo to make it your own.
+          small
+            br
+            a(href='http://bootsnipp.com/iframe/g6GWQ' target='_blank') Best viewed on full screen
+        p.lead
+          a.btn.btn-lg.btn-info(href='#')
+            | Learn
+            | more
+
+//- .row
+//-   .col-lg-8.col-lg-offset-2
+//-     include grid.pug
+.row 
+  .col-md-10.col-md-offset-1
+    .row
+      h4
+        | Products
+      a(href="#" style="position: left")
+        | View All
+    include grid.pug
+.row 
+  .col-md-10.col-md-offset-1
+    .row
+      h4
+        | Rewards
+      a(href="#" style="position: left")
+        | View All
+    include rewards-grid.pug
+
+include footer.pug
+
+script.
+  $(document).ready(function() { $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');}); $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');}); });
+
+  
+

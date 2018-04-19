@@ -1,0 +1,52 @@
+include head.pug
+  include style.pug
+  include rewards-style.pug
+  meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes")
+include header.pug
+.container(style="margin-top:5%; margin-bottom:5%;")
+  .row
+  .item
+    .item-content-block
+      .block-title Tags
+    .item-content-block.tags
+      a(href="#") lorem
+      a(href="#") loremipse
+      a(href="#") Esrite
+      a(href="#") remip
+      a(href="#") serte
+      a(href="#") quiaxms
+      a(href="#") loremipse
+      a(href="#") Esrite
+    .col-md-9.col-md-offset-1
+      - for (var x =0; x<6; x++)
+        .item-listing.bg-grey
+            .row
+              .col-md-4
+                img(src="http://rn53themes.net/themes/demo/directory/images/services/s1.jpeg" alt="")
+              .col-md-8.listing-title
+                a(href="listing-details.html")
+                  h3 World Best Local Directory
+                h4 Express Avenue Mall, Los Angeles
+                p
+                  b Address:
+                  |  28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.
+                .listing-enquiry-sec
+                  ul
+                    li
+                      a(href="#!")
+                        i.fa.fa-star-o(aria-hidden="true")
+                        |  Write Review
+                    li
+                      a(href="#!")
+                        i.fa.fa-commenting-o(aria-hidden="true")
+                        |  Send SMS
+                    li
+                      a(href="#!")
+                        i.fa.fa-phone(aria-hidden="true")
+                        |  Call Now
+                    li
+                      a(href="#!" data-dismiss="modal" data-toggle="modal" data-target="#list-quo")
+                        i.fa.fa-usd(aria-hidden="true")
+                        |  Get Quotes
+
+include footer.pug

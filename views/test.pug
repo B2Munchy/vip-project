@@ -1,0 +1,22 @@
+
+
+mixin image(name, caption)
+    figure
+        img(src=name + ".jpg")
+        figcaption= caption  
+
+- var pageTitle = "FLuffy"
+- var pageCaption = "A cutie pug"
+
+.topic-compnent
+    h4 Title
+    p Description
+    a(href="#") Link
+
+h1 #{pageTitle}
+p #{pageCaption}
+
+
++image("fluffy","Fluffy with his cutie")
+block content
+    include main.pug

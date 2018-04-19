@@ -1,0 +1,88 @@
+include head.pug
+  include style.pug
+  include style-products.pug
+  meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes")
+include header.pug
+
+.container(style="margin-top:5%; margin-bottom:5%;")
+  .row
+    .item
+      .item-content-block
+        .block-title Tags
+      .item-content-block.tags
+        a(href="#") lorem
+        a(href="#") loremipse
+        a(href="#") Esrite
+        a(href="#") remip
+        a(href="#") serte
+        a(href="#") quiaxms
+        a(href="#") loremipse
+        a(href="#") Esrite
+
+    .col-xs-4.item-photo
+      img(style="max-width:100%;" src="https://dummyimage.com/500x500/000/fff.png")  
+    .col-xs-8
+      h4
+        | Product Description
+      div(style="width:100%;border-top:1px solid silver")
+        p(style="padding:15px;")
+          small
+            | Stay connected either on the phone or the Web with the Galaxy S4 I337 from Samsung. With 16 GB of memory and a 4G connection, this phone stores precious photos and video and lets you upload them to a cloud or social network at blinding-fast speed. With a 17-hour operating life from one charge, this phone allows you keep in touch even on the go.
+            | With its built-in photo editor, the Galaxy S4 allows you to edit photos with the touch of a finger, eliminating extraneous background items. Usable with most carriers, this smartphone is the perfect companion for work or entertainment.
+        small
+          ul
+            li Super AMOLED capacitive touchscreen display with 16M colors
+            li Available on GSM, AT T, T-Mobile and other carriers
+            li
+              | Compatible with GSM 850 / 900 / 1800; HSDPA 850 / 1900 / 2100 LTE; 700 MHz Class 17 / 1700 / 2100 networks
+            li MicroUSB and USB connectivity
+            li Interfaces with Wi-Fi 802.11 a/b/g/n/ac, dual band and Bluetooth
+            li Wi-Fi hotspot to keep other devices online when a connection is not available
+            li SMS, MMS, email, Push Mail, IM and RSS messaging
+            li
+              | Front-facing camera features autofocus, an LED flash, dual video call capability and a sharp 4128 x 3096 pixel picture
+            li Features 16 GB memory and 2 GB RAM
+            li Upgradeable Jelly Bean v4.2.2 to Jelly Bean v4.3 Android OS
+            li 17 hours of talk time, 350 hours standby time on one charge
+            li Available in white or black
+            li Model I337
+            li Package includes phone, charger, battery and user manual
+            li
+              | Phone is 5.38 inches high x 2.75 inches wide x 0.13 inches deep and weighs a mere 4.59 oz
+  .col-sm-12
+    .bs-calltoaction.bs-calltoaction-primary
+      .row
+        .col-md-9.cta-contents
+          h1.cta-title Its a Call To Action
+          .cta-desc
+            p Describe the action here.
+            p Describe the action here.
+            p Describe the action here.
+        .col-md-3.cta-button
+          a.btn.btn-lg.btn-block.btn-primary(href="#") Go for It!
+
+  .row.vid
+    .col-md-5
+      h4
+        | Product Description
+        div(style="width:100%;border-top:1px solid silver")
+          p(style="padding:15px;")
+            small
+              | Stay connected either on the phone or the Web with the Galaxy S4 I337 from Samsung. With 16 GB of memory and a 4G connection, this phone stores precious photos and video and lets you upload them to a cloud or social network at blinding-fast speed. With a 17-hour operating life from one charge, this phone allows you keep in touch even on the go.
+              | With its built-in photo editor, the Galaxy S4 allows you to edit photos with the touch of a finger, eliminating extraneous background items. Usable with most carriers, this smartphone is the perfect companion for work or entertainment.
+          small
+            ul
+              li Super AMOLED capacitive touchscreen display with 16M colors
+              li Available on GSM, AT T, T-Mobile and other carriers
+              li
+                | Compatible with GSM 850 / 900 / 1800; HSDPA 850 / 1900 / 2100 LTE; 700 MHz Class 17 / 1700 / 2100 networks
+              li MicroUSB and USB connectivity
+              li Interfaces with Wi-Fi 802.11 a/b/g/n/ac, dual band and Bluetooth
+              li Wi-Fi hotspot to keep other devices online when a connection is not available
+              li SMS, MMS, email, Push Mail, IM and RSS messaging
+    .col-md-7
+      .embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(src="https://www.youtube.com/embed/jVIxe3YLNs8")
+
+
+include footer.pug

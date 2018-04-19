@@ -1,0 +1,23 @@
+html  
+  body
+    //- #{JSON.stringify(data[0].id)}
+    br
+    br
+    p #{JSON.stringify(data).replace(/"/g, " ")}
+    br
+    br
+    | --------------------
+    p #{data.name}
+    br
+    
+    br
+    | --------------------
+    br
+    p #{data.id}
+    br
+    br
+    | --------------------
+
+    //- - for(var x in data)
+    //-     #{x}
+    //-     br

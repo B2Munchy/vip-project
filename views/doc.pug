@@ -1,0 +1,29 @@
+include head.pug
+  include style.pug
+  include rewards-style.pug
+include header.pug
+  
+.container.content.content-wrapper
+  .row
+    .col-md-10.col-md-offset-1
+      // Nav tabs
+      .card
+        ul.nav.nav-tabs(role='tablist')
+          li.active(role='presentation')
+            a(href='#Profile' aria-controls='Profile' role='tab' data-toggle='tab') Profile
+          li(role='presentation')
+            a(href='#Points' aria-controls='Points' role='tab' data-toggle='tab') Points
+          li(role='presentation')
+            a(href='#Completed' aria-controls='Completed' role='tab' data-toggle='tab') Completed
+          li(role='presentation')
+            a(href='#TBD' aria-controls='TBD' role='tab' data-toggle='tab') To Be Done
+          .tab-content
+            #Profile.tab-pane.active(role='tabpanel')
+              include profile.pug
+            #Points.tab-pane(role='tabpanel')
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..
+            #Completed.tab-pane(role='tabpanel')
+              include completed.pug
+            #TBD.tab-pane(role='tabpanel')
+              include completed.pug  
+include footer.pug

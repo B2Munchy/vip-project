@@ -1,0 +1,14 @@
+.well.well-sm  
+  #products.row.list-group
+    - for (var x = 0; x < 6; x++)
+      .item.col-xs-4.col-lg-4
+        .thumbnail
+          img.group.list-group-image(src='http://placehold.it/200x200/000/fff' alt='')
+          .caption
+            h4.group.inner.list-group-item-heading
+              | Product title
+            p.group.inner.list-group-item-text
+              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-success
+              |Add to cart

@@ -1,0 +1,53 @@
+.col-md-9.col-md-offset-1
+  .row
+    .col
+      .panel.panel-info
+        .panel-heading
+          h3.panel-title #{data.name}
+        .panel-body
+          .row
+            .col-md-3.col-lg-3(align='center')
+              img.img-circle.img-responsive(alt='User Pic' src='https://dummyimage.com/300x300/000/fff.png')
+            .col-md-9.col-lg-9
+              table.table.table-user-information
+                tbody
+                  tr
+                    td 
+                      a(href='edit.html') Edit 
+                    td 
+                      a(href='edit.html') Logout
+                  tr
+                    td Department:
+                    td #{data.job}
+                  tr
+                    td Hire date:
+                    td 06/23/2013
+                  tr
+                    td Date of Birth
+                    td 01/24/1988
+                  tr
+                  tr
+                    td Gender
+                    td Female
+                  tr
+                    td Completed
+                    td Kathmandu,Nepal
+                  tr
+                    td Email
+                    td #{data.email}
+                  td Phone Number
+                  td
+                    | 123-4567-890(Landline)
+                    br
+                    br
+                    | 555-4567-890(Mobile)
+              a.btn.btn-primary(href='#',align='left') My Sales Performance
+              a.btn.btn-primary(href='#',align='right') Team Sales Performance
+        .panel-footer
+          a.btn.btn-sm.btn-primary(data-original-title='Broadcast Message' data-toggle='tooltip' type='button')
+            i.glyphicon.glyphicon-envelope
+          span.pull-right
+            a.btn.btn-sm.btn-warning(href='edit.html' data-original-title='Edit this user' data-toggle='tooltip' type='button')
+              i.glyphicon.glyphicon-edit
+            a.btn.btn-sm.btn-danger(data-original-title='Remove this user' data-toggle='tooltip' type='button')
+              i.glyphicon.glyphicon-remove

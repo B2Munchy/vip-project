@@ -1,0 +1,64 @@
+.container
+  .col-xs-12
+    #rewards-grid.carousel.slide
+      nav
+        ul.control-box.pager
+          li.left
+            a.arrowStil(data-slide="prev" href="#rewards-grid")
+              i.glyphicon.glyphicon-chevron-left
+          li.right
+            a.arrowStil(data-slide="next" href="#rewards-grid")
+              i.glyphicon.glyphicon-chevron-right
+      .carousel-inner
+        .item.active
+          ul.thumbnails
+            - for (var x=0; x<4; x++)
+              li.col-sm-3
+                .casing
+                  .thumbnail
+                    a(href="#")
+                      img(src="http://placehold.it/360x240" alt="")
+                  .caption
+                    h4 Item Title
+                    p Hello world, something nice to develop
+                    a.btn.btn-mini(href="#") » Read More
+        .item
+          ul.thumbnails
+            - for (var x=0; x<4; x++)
+              li.col-sm-3
+                .casing
+                  .thumbnail
+                    a(href="#")
+                      img(src="http://placehold.it/360x240" alt="")
+                  .caption
+                    h4 Item Title
+                    p Hello world, something nice to develop
+                    a.btn.btn-mini(href="#") » Read More            
+        // /Slide2
+        .item
+          ul.thumbnails
+            - for (var x=0; x<4; x++)
+              li.col-sm-3
+                .casing
+                  .thumbnail
+                    a(href="#")
+                      img(src="http://placehold.it/360x240" alt="")
+                  .caption
+                    h4 Item Title.............
+                    p Hello world, something nice to develop
+                    a.btn.btn-mini(href="#") » Read More
+      
+        // /Slide3
+      
+      // /.control-box
+    // /#myCarousel
+  // /.col-xs-12
+// /.container
+
+
+script.
+  $(document).ready(function() {
+  $('.rewards-grid').rewards-grid({
+  interval: 6000
+  })
+  });

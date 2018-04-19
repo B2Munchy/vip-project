@@ -1,0 +1,38 @@
+associations in migrations:
+  u declare the "hasOne or belong to....etc" in the model file
+  but u gotta add the key and refrences manually to the migration file then run the migrations
+
+
+sequelize migration:create --name add-email-to-user
+
+check Optimistic Locking
+SELECT*FROM tablename;
+
+Raw queries
+Sometimes you might be expecting a massive dataset that you just want to display, without manipulation. For each row you select, Sequelize creates an instance with functions for update, delete, get associations etc. If you have thousands of rows, this might take some time. If you only need the raw data and don't want to update anything, you can do like this to get the raw data.
+
+// Are you expecting a massive dataset from the DB,
+// and don't want to spend the time building DAOs for each entry?
+// You can pass an extra query option to get the raw data instead:
+Project.findAll({ where: { ... }, raw: true })
+
+
+const Post = sequelize.define('post', attributes, {
+  defaultScope: {
+    where: {
+      active: true
+    }
+  },
+  scopes: {
+    deleted: {
+      where: {
+        deleted: true
+      }
+    }
+  }
+});
+
+User.hasMany(Post); // regular getPosts association
+User.hasMany(Post.scope('deleted'), { as: 'deletedPosts' });
+User.getPosts(); // WHERE active = true
+User.getDeletedPosts(); // WHERE deleted = true

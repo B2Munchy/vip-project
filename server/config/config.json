@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "dell",
+    "password": 12345,
+    "database": "vip-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "dell",
+    "password": 12345,
+    "database": "vip-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "dell",
+    "password": 12345,
+    "database": "vip-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}

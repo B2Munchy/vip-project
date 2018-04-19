@@ -1,0 +1,88 @@
+include head.pug
+  include style.pug
+  include style-quiz.pug
+  meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes")
+include header.pug
+
+.container(style="margin-top:5%; margin-bottom:5%;")
+  h3 Quiz Dummy
+  form#quiz(name="quiz" method="post" onsubmit="return false")
+    - for (var x=0; x<4; x++)
+      .question ¿Quién detestan la nueva casa?
+      input#answer(type="radio" name="group1" value="wrong")
+      |  Josh
+      br
+      input#answer(type="radio" name="group1" value="wrong")
+      |  Amanda
+      br
+      input#answer(type="radio" name="group1" value="correct")
+      |  Josh y Amanda
+      hr
+      .question ¿Quién es señor Dawes?
+      input#answer(type="radio" name="group2" value="wrong")
+      | Un familia amigo
+      br
+      input#answer(type="radio" name="group2" value="wrong")
+      | Un gato
+      br
+      input#answer(type="radio" name="group2" value="correct")
+      | Un amable joven de la agencia de bienes raíces
+      hr
+      .question ¿Quién qué sus buscan?
+      input#answer(type="radio" name="group3" value="wrong")
+      | Josh
+      br
+      input#answer(type="radio" name="group3" value="wrong")
+      |  Petey
+      br
+      input#answer(type="radio" name="group3" value="correct")
+      | Josh y Petey
+      
+      hr
+    button.submit(onclick="return handleClick();" type="submit") Submit
+
+  //- form
+  //-     .question
+  //-       p
+  //-         strong Q1
+  //-         | : Mary is English. She was born in London
+        
+  //-       label
+  //-         input(type="radio" name="one" value="a")
+  //-         | Mary was born in England
+  //-       br
+  //-       label
+  //-         input(type="radio" name="one" value="b")
+  //-         | Mary, who is English, was born in London
+  //-       br
+  //-       label
+  //-         input(type="radio" name="one" value="c")
+  //-         | English Mary was born in London
+  //-       br
+  //-       label
+  //-         input(type="radio" name="one" value="d")
+  //-         | London Mary is English born
+  //-       br
+  //-       br
+  //-     .question
+  //-       p
+  //-         strong Q2
+  //-         | : Mary is English. She was born in London
+  //-       label
+  //-         input(type="radio" name="two" value="a")
+  //-         | Mary was born in England
+  //-       label
+  //-         input(type="radio" name="two" value="b")
+  //-         | Mary, who is English, was born in London
+  //-       label
+  //-         input(type="radio" name="two" value="c")
+  //-         | English Mary was born in London
+  //-       label
+  //-         input(type="radio" name="two" value="d")
+  //-         | London Mary is English born
+  //- input(type="submit")
+
+
+
+
+include footer.pug
